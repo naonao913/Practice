@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+/* 共通部分 */
+html {
+    font-size : 100%;
+}
+body {
+    line-height : 1.7;
+}
+a {
+    text-decoration : none;
+}
+img {
+    max-width : 100%;
+}
+
+
+/* ヘッダー */
+.logo img {
+    width : 50px;
+    height : 50px;
+    padding-bottom : 10px;
+    margin-top : 20px;
+}
+.navi {
+    display : flex;
+    margin-top : 25px;
+}
+.navi li {
+    list-style : none;
+    font-size : 20px;
+    margin-left : 40px;
+}
+.navi a {
+    color : #000;
+}
+.navi a:hover {
+    color : rgb(101, 204, 255);
+}
+header {
+    display : flex;
+    justify-content : center; 
+    position : fixed;
+    width : 100%;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+
+/* メインビジュアル */
+#mv {
+    color: #fff;
+    min-height : 100vh;
+}
+.mv_intro {
+   max-width : 1100px;
+   margin : 0 auto;
+   padding : 7% 4%;
+}
+#mv h3 {
+    font-size : 2rem;
+    font-family : cursive;
+    font-weight: lighter;
+}
+.mv_ttl {
+    font-size : 4.7rem;
+    font-family : cursive;
+    font-weight : normal;
+}
+#mv p {
+    font-family: serif;
+    font-size : 1.6rem;
+    margin-bottom : 20px;
+}
+.mv_btn {
+    font-size : 1.5rem;
+    font-family: serif;
+    padding: 15px 25px;
+    margin-top : 10%;
+    background-color: rgba(233, 240, 240, .3);
+    border-radius: 10px;
+    color : #fff;
+}
+.mv_btn:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
+.mv_bg {
+    background-image : url(images/office-581127_1920.jpg);
+    background-size : cover;
+    background-position : center top;
+    background-repeat : no-repeat;
+}
+.mv_twi {
+    color : rgb(4, 205, 219)
+}
+.mv_twi:hover {
+    color : #0ff;
+}
+
+
+/* 紹介 */
+#prof {
+    min-height : 100vh;
+
+}
+.prof_ttl {
+    font-size : 4rem;
+    font-family : cursive;
+    font-weight : normal;
+    margin-bottom : 17px;
+}
+#prof p {
+    font-family : serif;
+    font-weight : normal;
+    font-size : 1.5rem;
+}
+.cha {
+    background-image : url(images/winter-985431_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height : 980px;
+    padding-top : 500px;
+    padding-left : 65%;
+    color : #fff;
+}
+.prog {
+    background-image: url(images/p184.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height : 980px;
+    padding : 130px 0 0 130px;
+    color : #fff;
+}
+.dri {
+    background-image: url(images/winding-road-1556177_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height : 980px;
+    padding : 630px 0 0 190px;
+    color : #fff;
+
+}
+
+
+/* 学習 */
+.lang {
+    max-width : 1100px;
+    margin : 0 auto;
+    padding : 0 4%;
+}
+.lang_ttl {
+    font-size : 4rem;
+    font-family : cursive;
+    font-weight : normal;
+    text-align : center;
+    margin-bottom : 7%;
+    padding-top : 7%;
+}
+.lang_grid {
+    display : grid;
+    grid-template-columns : 1fr 1fr;
+    margin-bottom: 8%;
+}
+.lang_item {
+    width : 400px;
+    padding-bottom : 11%;
+    margin-left : 25%;
+    font-family: serif;
+    font-weight: normal;
+    font-size : 1.3rem;
+}
+.lang_item img {
+    height : 130px;
+    width : 180px;
+}
+.method_ttl {
+    font-size : 4rem;
+    font-family: cursive;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 7%;
+}
+.method_list {
+    display : flex;
+    justify-content: center;
+    margin-bottom: 7%;
+    background-color: rgba(220, 222, 224);
+}
+.method_list p {
+    font-family: serif;
+    font-size : 1.3rem;
+    font-weight: normal;
+    margin : 3%;
+}
+.method_list img {
+    width : 500px;
+    height : 300px;
+}
+
+
+/* お問い合わせ */
+.lnq_ttl {
+    font-size : 4rem;
+    font-family : cursive;
+    font-weight : normal;
+    text-align : center;
+    margin-bottom : 7%;
+    padding-top : 7%;
+}
+input[type="text"], input[type="email"], textarea {
+    background : rgba(255, 255, 255, .5);
+    border : 1px solid;
+    border-radius : 10px;
+    font-size : 1rem;
+    font-weight : normal;
+    padding : 10px;
+}
+label {
+    font-size : 1.5rem;
+    font-family : serif;
+    font-weight : normal;
+    margin-bottom: 10px;
+    display: block;
+    /* color : #fff; */
+}
+input[type="text"], input[type="email"] {
+    max-width : 240px;
+    width : 100%;
+}
+textarea {
+    max-width : 480px;
+    width : 100%;
+    height : 6rem;
+}
+.button {
+    border-radius : 10px;
+    width : 120px;
+    margin-top : 20px;
+    padding : 20px;
+    cursor : pointer;
+    line-height : 1;
+    background-color : rgb(4, 205, 219);
+    color : #fff;
+}
+.button:hover {
+    background : rgb(120, 220, 255);
+}
+
+.lnq {
+    max-width : 1100px;
+    margin : 0 auto;
+}
+#cont {
+    background-image : url(images/laptop-2572772_1920.jpg);
+    min-height : 100vh;
+}
+.cont_fot {
+    display: flex;
+    justify-content : center;
+    align-content : flex-end;
+    margin-top : 240px;
+}
